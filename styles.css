@@ -1,0 +1,22 @@
+@font-face {
+    font-family: roboto;
+    src: url(/font/roboto/Roboto-Light.ttf);
+  }
+html, body {
+    margin: 0;
+    background-color: #183F51;
+}
+.container {
+    display: flex;
+    margin: 100px auto;
+    width: 40%;
+    color: #fff;
+    font-size: 16px;
+    font-family: roboto;
+    flex-direction: column;
+}
+.signature {
+    margin-top: 32px;
+    text-align: right;
+    font-weight: bold;
+}
