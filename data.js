@@ -1,25 +1,54 @@
-const data = [
-  "Xuân này hơn hẳn mấy xuân qua. Phúc lộc đưa nhau đến từng nhà. Vài lời cung chúc tân niên mới. Vạn sự an khang vạn sự lành.",
-  "Hoa đào nở, chim én về, mùa xuân lại đến. Chúc một năm mới: nghìn sự như ý, vạn sự như mơ, triệu sự bất ngờ, tỉ lần hạnh phúc.",
-  "Chúc bạn 12 tháng phú quý, 365 ngày phát tài, 8760 giờ sung túc, 525600 phút thành công 31536000 giây vạn sự như ý.",
-  "Chúc mừng năm mới – Chúc bạn luôn: Đong đầy hạnh phúc – Gói trọn lộc tài – Giữ mãi an khang – Thắt chặt phú quý.",
-  "Chúc mừng năm mới Canh Tý 2020. Chúc năm mới sức khỏe dẻo dai, công việc thuận lợi thăng tiến dài dài, phi những nước đại tiến tới thành công.",
-  "Năm hết tết đến kính chúc mọi người thật nhiều sức khoẻ, miệng cười vui vẻ, tiền vào mạnh mẽ, cái gì cũng được suôn sẻ, để sống tiếp một cuộc đời thật là đẹp đẽ.",
-  "Kính chúc mọi người một năm mới: Vui trong sức khoẻ, trẻ trong tâm hồn, khôn trong lý tưởng và trưởng thành mọi lĩnh vực.",
-  "Năm mới chúc nhau sức khỏe nhiều. Bạc tiền rủng rỉnh thoải mái tiêu. Gia đình hạnh phúc bè bạn quý. Thanh thản vui chơi mọi buổi chiều.",
-  "Mùa xuân xin chúc – Khúc ca an bình – Năm mới phát tài – Vạn sự như ý – Già trẻ lớn bé – Đầy ắp tiếng cười – Trên mặt ngời ngời – Tràn đầy hạnh phúc – Xuân đến hy vọng – Ấm no mọi nhà – Kính chúc ông bà – Sống lâu trăm tuổi – Kính chúc ba mẹ – Sức khoẻ dồi dào – Đôi lứa yêu nhau – Càng thêm nồng ấm – Các em bé nhỏ – Học giỏi chăm ngoan – Chúc Tết mọi người – Năm mới hoan hỉ – Gặp nhiều niềm vui.",
-  "Năm hết Tết đến – Chúc ông chúc bà – Chúc cha chúc mẹ – Chúc cô chúc cậu – Chúc chú chúc dì – Chúc anh chúc chị – Chúc luôn các em – Chúc cả các cháu – Dồi dào sức khoẻ – Có nhiều niềm vui – Tiền xu nặng túi – Tiền giấy đầy bao – Đi ăn được khao – Về nhà người rước – Tiền vô như nước – Tình vào đầy tim – Chăn ấm nệm êm – Sung sướng ban đêm – Hạnh phúc ban ngày – Luôn luôn gặp may – Tràn đầy hạnh phúc.",
-  "Năm mới Tết đến – Rước hên vào nhà – Quà cáp bao la – Mọi nhà no đủ – Vàng bạc đầy tủ – Gia chủ phát tài – Già trẻ gái trai – Sum vầy hạnh phúc – Cầu tài chúc phúc – Lộc đến quanh năm – An khang thịnh vượng.",
-  "Đong cho đầy Hạnh phúc. Gói cho trọn Lộc tài. Giữ cho mãi An Khang. Thắt cho chặt Phú quý. Cùng chúc nhau Như ý, Hứng cho tròn An Khang, Chúc năm mới Bình An. Cả nhà đều Sung túc.",
-  "Mừng 2020 phát tài phát lộc/ Tiền vô xồng xộc, tiền ra từ từ/ Sức khoẻ có dư, công danh tấn tới/ Tình duyên phơi phới, hạnh phúc thăng hoa/ Xin chúc mọi nhà một năm đại thắng",
-  "Năm hết Tết đến – Đón chuột tiễn heo – Chúc ông chúc bà – Chúc cha chúc mẹ – Chúc cô chúc cậu – Chúc chú chúc dì – Chúc anh chúc chị – Chúc luôn các em – Chúc cả các cháu – Dồi dào sức khoẻ – Có nhiều niềm vui – Tiền xu nặng túi – Tiền giấy đầy bao – Đi ăn được khao – Về nhà người rước – Tiền vô như nước – Tình vào đầy tim – Chăn ấm nệm êm – Sung sướng ban đêm – Hạnh phúc ban ngày – Luôn luôn gặp may – Suốt năm Canh Tý.",
-  "Năm mới đến rồi, chúc mọi người có một bầu trời sức khoẻ, một biển cả tình thương, một đại dương tình cảm, một điệp khúc tình yêu, một người yêu chung thủy, một tình bạn mênh mông, một gia đình thịnh vượng. Chúc các bà, các ông, các cô, các chú, các chị, các anh sang năm mới vạn sự như ý, tỉ sự như mơ, làm việc như thơ, đời vui như nhạc, coi tiền như rác, coi bạc như rơm, chung thủy với cơm và sắt son với phở.",
-  "Chúc bạn có 1 bầu trời sức khỏe, 1 Biển cả tình thương, 1 Đại dương tình bạn, 1 Điệp khúc tình yêu, 1 Người yêu chung thủy, 1 Sự nghiệp sáng ngời, 1 Gia đình thịnh vượng. – Chúc năm mới cả gia đình bạn vạn sự như ý, Tỉ sự như mơ, Triệu triệu bất ngờ, Không chờ cũng đến!",
-  "Thay mặt Đảng, Quốc hội, Chính phủ, Mặt trận Tổ quốc kính chúc đồng chí và gia đình một năm mới hạnh phúc, an khang, thịnh vượng!"
+const english = [
+"I trust that age doth not wither nor custom stale your infinite variety.",
+"Live as if you were to die tomorrow. Learn as if you were to live forever.​",
+"Be yourself: everyone else is already taken.​",
+"A person needs just three things to be truly happy in this world: someone to love, something to do, and something to hope for.​",
+"Promise me you’ll never stop dreaming.​",
+"May the best of your past be the worst of your future.​",
+"Your good luck will come in waves, and so does your bad, so you have to take the good with the bad and press forward.​",
+"Keep your best wishes and your biggest goals close to your heart and dedicate time to them every day.​",
+"May the forces of evil become confused on the way to your house.​",
+"Every day is a fresh beginning, every morn is the world made new.​",
+"With the new day comes new strength and new thoughts.​",
+"What a wonderful thought it is that some of the best days of our lives haven't even happened yet.​",
+"My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor and some style.​",
+"Life is change. Growth is optional. Choose wisely.​",
+"When life is sweet, say thank you and celebrate. When life is bitter, say thank you and grow.​",
+"Remove ‘shoulds’ from your vocabulary this year. Start your journey of self-love now.​",
+"We will open the book. Its pages are blank. We are going to put words on them ourselves. The book is called Opportunity and its first chapter is New Year’s Day.​",
+"Never underestimate the power you have to take your life in a new direction.​",
+"You can get excited about the future. The past won’t mind.​",
+"If you’re brave enough to say goodbye, life will reward you with a new hello.​",
+"Words can not say the happiness that is sent your way. May you find only the best, wishing you all happiness.​"
 ];
 
+const vietnamese = [
+"Chúc cảm xúc của bạn luôn đa sắc đa màu cho dù ở tuổi nào đi nữa. ​",
+"Chúc bạn sống trọn vẹn và học hết chân trời góc bể.​",
+"Chúc bạn luôn là chính mình.​",
+"Chúc bạn có nhiều người để yêu thương, nhiều việc để làm và nhiều ước mơ để phấn đấu. Chúc bạn hạnh phúc.​",
+"Chúc bạn không bao giờ từ bỏ ước mơ.​",
+"Chúc bạn có một năm phía trước tốt đẹp nhiều hơn và thịnh vượng nhiều hơn.​",
+"Chúc bạn đối diện với cuộc sống muôn màu với tinh thần cầu tiến. May mắn cũng được, xui xẻo cũng được, miễn là cầu tiến.​",
+"Chúc bạn không ngừng để tâm và phấn đấu cho những mục tiêu quan trọng của mình. ​",
+"Chúc mọi điều xui xẻo hay xấu xí bay màu khỏi cuộc sống của bạn.​",
+"Chúc bạn mỗi ngày là một khởi đầu thú vị, mỗi buổi sáng là một thế giới thú vị.​",
+"Chúc một năm mới nhiều sức mạnh mới và nhiều tư duy mới.​",
+"Chúc bạn không bao giờ gặp ngày đẹp nhất, vì ngày mai luôn đẹp hơn ngày hôm nay.​",
+"Chúc bạn sống tích cực, có cá tính riêng, có đam mê và giàu lòng trắc ẩn.​",
+"Chúc bạn hiểu rõ cuộc đời. Và chọn phát triển nó đúng đắn.​",
+"Chúc bạn biết trân trọng mọi thành công, cũng như mọi thất bại, và luôn tiến lên.​",
+"Chúc bạn yêu bản thân hơn và bỏ ngoài tai những lời khuyên sáo rỗng.​",
+"Chúc bạn viết được nhiều chương vào quyển sách Những Cơ Hội Của Tôi Năm 2020, bắt đầu với chương Mồng 1 Phát Tài.​",
+"Chúc bạn hiểu rõ bản thân và biết định hướng bản thân.​",
+"Chúc bạn có niềm tin vào tương lai, dù quá khứ hay hiện tại thế nào đi nữa.​",
+"Chúc bạn đủ bản lĩnh để quên mọi điều xấu xí của năm cũ, và chuẩn bị đón một năm mới, tốt, đẹp.​",
+"Chúc bạn hạnh phúc. Không phải, trên cả hạnh phúc.​",
+];
 
 (function newFact() {
-    var randomFact = Math.floor(Math.random() * data.length);
-    document.getElementById('content').innerHTML = data[randomFact];
-  })();
+    var randomFact = Math.floor(Math.random() * english.length);
+    document.getElementById('content-english').innerHTML = english[randomFact];
+    document.getElementById('content-vietnamese').innerHTML = vietnamese[randomFact];
+    document.getElementById("signature").innerHTML = window.location.hostname;
+})();
