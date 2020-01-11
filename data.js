@@ -48,7 +48,10 @@ const vietnamese = [
 
 (function newFact() {
     var randomFact = Math.floor(Math.random() * english.length);
+    var regexSignature = /\w+(?=\.\w+$)/g;
+    var hostname = window.location.hostname;
+    var sign = hostname.match(regexSignature)[0];
     document.getElementById('content-english').innerHTML = english[randomFact];
     document.getElementById('content-vietnamese').innerHTML = vietnamese[randomFact];
-    document.getElementById("signature").innerHTML = window.location.hostname;
+    document.getElementById("signature").innerHTML = sign;
 })();
