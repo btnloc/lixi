@@ -39,7 +39,7 @@ const vietnamese = [
 "Chúc bạn hiểu rõ cuộc đời. Và chọn phát triển nó đúng đắn.​",
 "Chúc bạn biết trân trọng mọi thành công, cũng như mọi thất bại, và luôn tiến lên.​",
 "Chúc bạn yêu bản thân hơn và bỏ ngoài tai những lời khuyên sáo rỗng.​",
-"Chúc bạn viết được nhiều chương vào quyển sách Những Cơ Hội Của Tôi Năm 2020, bắt đầu với chương Mồng 1 Phát Tài.​",
+"Chúc bạn viết được nhiều chương vào quyển sách Những Cơ Hội Của Tôi Năm 2026, bắt đầu với chương Mồng 1 Phát Tài.​",
 "Chúc bạn hiểu rõ bản thân và biết định hướng bản thân.​",
 "Chúc bạn có niềm tin vào tương lai, dù quá khứ hay hiện tại thế nào đi nữa.​",
 "Chúc bạn đủ bản lĩnh để quên mọi điều xấu xí của năm cũ, và chuẩn bị đón một năm mới, tốt, đẹp.​",
