@@ -82,7 +82,7 @@ body {
           clip-path: polygon(5% 40%, 50% 100%, 95% 40%, 100% 0, 0 0);
 }
 .envelope__flap--inside {
-  background: #48698c;
+  background: #A57865;
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
 }
